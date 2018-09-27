@@ -13,7 +13,7 @@ public class TestNGRetryFailedDemo {
 	@Test
 	public void test2() {
 		System.out.println(" I am inside Test 2 ");
-		//int i=1/0;
+		int i=1/0;
 	}
 	
 	@Test(retryAnalyzer = listeners.RetryAnalyzer.class)

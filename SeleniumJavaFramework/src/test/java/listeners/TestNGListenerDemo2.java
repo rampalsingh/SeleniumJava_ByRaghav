@@ -1,10 +1,7 @@
 package listeners;
 
 import org.testng.SkipException;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
-import junit.framework.Assert;
 
 public class TestNGListenerDemo2 {
 	

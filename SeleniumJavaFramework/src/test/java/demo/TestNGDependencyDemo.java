@@ -1,6 +1,7 @@
 package demo;
 
-import org.junit.Ignore;
+
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class TestNGDependencyDemo {
