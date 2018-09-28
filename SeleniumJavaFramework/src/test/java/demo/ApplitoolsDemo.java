@@ -1,7 +1,9 @@
 package demo;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import com.applitools.eyes.RectangleSize;
 import com.applitools.eyes.selenium.Eyes;
 
@@ -9,8 +11,10 @@ public class ApplitoolsDemo {
 
 	public static void main(String[] args) {
 
+		//String projectPath = System.getProperty("user.dir");
+
 		// Open a Chrome browser.
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Administrator\\git\\SeleniumJavaFramework1\\SeleniumJavaFramework\\drivers\\chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 
 		// Initialize the eyes SDK and set your private API key.

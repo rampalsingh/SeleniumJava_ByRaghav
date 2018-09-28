@@ -21,7 +21,8 @@ public class FluentWaitDemo {
 	
 	public static void test() throws Exception {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\Desktop\\Projects\\Selenium\\SeleniumJavaFramework\\drivers\\chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver/chromedriver.exe");
+
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://google.com");
@@ -52,9 +53,8 @@ public class FluentWaitDemo {
 		   });
 
 		
-		   element.click();
-		
-		
+		element.click();
+
 		Thread.sleep(3000);
 		driver.close();
 		driver.quit();
